@@ -1,0 +1,64 @@
+/* ******************** Root Variables ************************** */
+:root {
+  /* colors */
+
+  --color-primary: #7380ec;
+  --color-Danger: #ff7782;
+  --color-Sucess: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-InfoDark: #7d8da1;
+  --color-Infolight: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primaryVariant: #111e88;
+  --color-darkVariant: #677483;
+  --color-background: #f6f6f9;
+
+  /* Border radius */
+
+  --cardBorderRadius: 2rem;
+  --borderRadius1: 0.4rem;
+  --borderRadius2: 0.8rem;
+  --borderRadius3: 1.2rem;
+
+  /* padding and box shadow */
+
+  --cardPadding: 1.8rem;
+  --paddin1: 1.2rem;
+  --boxshadow: 0 2rem 3rem var(--lightColor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Redressed", sans-serif;
+  font-size: 0.88rem;
+  background-color: var(--color-background);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
