@@ -54,6 +54,17 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0% auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+  background-color: #ff7782;
+}
+
+/***************************************** chinter pinter ***********************************************/
+
 a {
   color: var(--color-dark);
 }
@@ -61,4 +72,84 @@ a {
 img {
   display: block;
   width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 0.87rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.text-muted {
+  color: var(--color-InfoDark);
+}
+
+p {
+  color: var(--color-darkVariant);
+}
+
+b {
+  color: var(--color-dark);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-Danger);
+}
+
+.sucess {
+  color: var(--color-Sucess);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+aside {
+  height: 100vh;
+  background-color: #7380ec;
+}
+
+aside .top {
+  background-color: #314be0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+aside .logo {
+  display: flex;
+}
+
+aside .logo img {
+  width: 4rem;
+  height: 4rem;
 }
