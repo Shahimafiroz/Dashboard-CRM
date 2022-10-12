@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient();
+}
+
 /* ******************** Root Variables ************************** */
 :root {
   /* colors */
@@ -52,6 +56,7 @@ body {
   background-color: var(--color-background);
   user-select: none;
   overflow-x: hidden;
+  color: #363949;
 }
 
 .container {
@@ -230,4 +235,37 @@ aside .sidebar .msg-count {
   padding: 3px 10px;
   font-size: 11px;
   border-radius: var(--borderRadius1);
+}
+
+/***************************************** Main section ***********************************************/
+
+main {
+  margin-top: 3.4rem;
+}
+
+main .date {
+  display: inline-block;
+  background-color: var(--color-light);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+
+main .date input[type="date"] {
+  background: transparent;
+  color: var(--color-dark);
+}
+
+main .insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+main .insights > div {
+  background: var(--color-white);
+  padding: var(--cardPadding);
+  border-radius: var(--cardBorderRadius);
+  margin-top: 1.5rem;
+  box-shadow: var(--boxshadow);
 }
