@@ -60,7 +60,7 @@ body {
   margin: 0% auto;
   gap: 1.8rem;
   grid-template-columns: 14rem auto 23rem;
-  background-color: #ff7782;
+  /* background-color: #ff7782; */
 }
 
 /***************************************** chinter pinter ***********************************************/
@@ -80,7 +80,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: 50;
 }
 h3 {
   font-size: 0.87rem;
@@ -134,11 +135,11 @@ b {
 
 aside {
   height: 100vh;
-  background-color: #7380ec;
+  /* background-color: #7380ec; */
 }
 
 aside .top {
-  background-color: #314be0;
+  /* background-color: #314be0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,9 +148,86 @@ aside .top {
 
 aside .logo {
   display: flex;
+  gap: 0rem;
 }
 
 aside .logo img {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/***************************************** Side bar ***********************************************/
+
+aside .sidebar {
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+aside .top {
+  position: flex;
+}
+
+aside .top h2 {
+  position: inline-block;
+  align-self: flex-end;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-InfoDark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 2.5rem;
+  transition: all 300 ease;
+}
+
+aside .sidebar a i {
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 6rem;
+  width: 100%;
+}
+
+aside .sidebar a.active {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  margin-left: 0;
+}
+
+aside .sidebar a.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #7380ec;
+}
+
+aside .side a .active i {
+  color: var(--color-primary);
+  margin-left: calc(1rem-3px);
+}
+
+aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+
+aside .sidebar a:hover i {
+  margin-left: 1rem;
+}
+
+aside .sidebar .msg-count {
+  background-color: #ff8555;
+  color: var(--color-white);
+  padding: 3px 10px;
+  font-size: 11px;
+  border-radius: var(--borderRadius1);
 }
