@@ -24,11 +24,11 @@ body {
   --cardBorderRadius: 2rem;
   --borderRadius1: 0.4rem;
   --borderRadius2: 0.8rem;
-  --borderRadius3: 1.2rem;
+  --borderRadius3: 1.3rem;
 
   /* padding and box shadow */
 
-  --cardPadding: 1.8rem;
+  --cardPadding: 1.3rem;
   --paddin1: 1.2rem;
   --boxshadow: 0 2rem 3rem rgba(114, 126, 230, 0.18);
 }
@@ -56,6 +56,7 @@ body {
   background-color: var(--color-background);
   user-select: none;
   overflow-x: hidden;
+
   color: #363949;
 }
 
@@ -184,7 +185,7 @@ aside .top h2 {
 aside .sidebar a {
   display: flex;
   color: var(--color-InfoDark);
-  margin-left: 2rem;
+  margin-left: 0rem;
   gap: 1rem;
   align-items: center;
   position: relative;
@@ -259,7 +260,7 @@ main .date input[type="date"] {
 main .insights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  gap: 1rem;
 }
 
 main .insights > div {
@@ -269,6 +270,7 @@ main .insights > div {
   margin-top: 1.5rem;
   box-shadow: var(--boxshadow);
   transition: all 300ms ease;
+  font-weight: 800;
 }
 
 main .insights > div:hover {
@@ -352,14 +354,14 @@ main .insights .progress .number {
 }
 
 main .insights small {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
   display: block;
 }
 
 /***************************************** orders  section ***********************************************/
 
 main .recent-o {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 main .recent-o h2 {
@@ -398,4 +400,21 @@ main .recent-o a {
   display: block;
   margin: 1rem;
   color: var(--color-primary);
+}
+
+/***************************************** Right ***********************************************/
+
+.right {
+  margin-top: 1.6rem;
+}
+
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  background: gray;
+}
+
+.right .top boutton {
+  display: none;
 }
