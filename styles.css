@@ -406,15 +406,70 @@ main .recent-o a {
 
 .right {
   margin-top: 1.6rem;
+  /* margin-right: 1.4rem; */
+  padding-right: 8.5rem;
 }
 
 .right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
-  background: gray;
+  /* background: gray; */
 }
 
-.right .top boutton {
+#menu-btn {
   display: none;
+}
+
+.right .theme-toggle {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.4rem;
+  width: 3.5rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  /* padding: 10px; */
+}
+
+.right .top .theme-toggle i {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 5px; */
+}
+
+#active {
+  background: var(--color-primary);
+  color: white;
+  border-radius: 5rem;
+  height: 1.4rem;
+  width: 2rem;
+  padding-inline-start: 0;
+}
+
+.right .top .profile {
+  display: flex;
+  gap: 1rem;
+  text-align: right;
+}
+
+/***************************************** top recent updates ***********************************************/
+
+.right .recent-u {
+  margin-top: 1rem;
+}
+
+.right .recent-u h2 {
+  margin-bottom: 0.8rem;
+}
+
+.right .recent-u .upds {
+  background-color: var(--color-white);
+  padding: var(--cardPadding);
+  border-radius: var(--cardBorderRadius);
 }
