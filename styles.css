@@ -28,7 +28,7 @@ body {
 
   /* padding and box shadow */
 
-  --cardPadding: 1.3rem;
+  --cardPadding: 1rem;
   --paddin1: 1.2rem;
   --boxshadow: 0 2rem 3rem rgba(114, 126, 230, 0.18);
 }
@@ -461,15 +461,97 @@ main .recent-o a {
 /***************************************** top recent updates ***********************************************/
 
 .right .recent-u {
-  margin-top: 1rem;
+  margin-top: 0rem;
+  width: 17rem;
 }
 
 .right .recent-u h2 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0rem;
 }
 
 .right .recent-u .upds {
   background-color: var(--color-white);
   padding: var(--cardPadding);
   border-radius: var(--cardBorderRadius);
+  box-shadow: var(--boxshadow);
+}
+
+.right .recent-u .upds:hover {
+  box-shadow: none;
+}
+
+.right .recent-u .upds .upd {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/***************************************** Sales analysis ***********************************************/
+
+.right .sales-analytics {
+  margin-top: 1rem;
+}
+
+.right .sales-analytics {
+  margin-bottom: 0.8rem;
+}
+
+.right .sales-analytics .item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--cardPadding);
+  border-radius: var(--borderRadius3);
+  box-shadow: var(--boxshadow);
+  transition: all 300ms ease;
+  width: 17rem;
+}
+
+.right .sales-analytics .item:hover {
+  box-shadow: none;
+}
+
+.right .sales-analytics .item .right {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  justify-content: space-between;
+}
+
+.right .sales-analytics .item .icon {
+  padding: 00.6rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+}
+
+#brrr {
+  background: var(--color-Danger);
+}
+
+#drrr {
+  background: var(--color-Sucess);
+}
+
+.right .sales-analytics .add-product {
+  background-color: transparent;
+  border: 2px dashed var(--color-primary);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .sales-analytics .add-product div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
