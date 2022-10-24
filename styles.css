@@ -407,13 +407,16 @@ main .recent-o a {
 .right {
   margin-top: 1.6rem;
   /* margin-right: 1.4rem; */
-  padding-right: 8.5rem;
+  /* padding-right: 8.5rem; */
+
+  align-items: center;
 }
 
 .right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
+  margin-right: 0;
   /* background: gray; */
 }
 
@@ -456,6 +459,9 @@ main .recent-o a {
   display: flex;
   gap: 1rem;
   text-align: right;
+  margin-right: 0;
+  position: static;
+  padding-right: 8.5rem;
 }
 
 /***************************************** top recent updates ***********************************************/
@@ -463,6 +469,7 @@ main .recent-o a {
 .right .recent-u {
   margin-top: 0rem;
   width: 17rem;
+  margin-right: 0;
 }
 
 .right .recent-u h2 {
@@ -508,6 +515,7 @@ main .recent-o a {
   box-shadow: var(--boxshadow);
   transition: all 300ms ease;
   width: 17rem;
+  font-family: "Mali", cursive;
 }
 
 .right .sales-analytics .item:hover {
@@ -521,7 +529,6 @@ main .recent-o a {
   align-items: start;
   margin: 0;
   width: 100%;
-  background-color: var(--color-primary);
   justify-content: space-between;
 }
 
@@ -554,4 +561,50 @@ main .recent-o a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+/***************************************** MEDIA QUERIES ***********************************************/
+
+/* big tablets and small laptops */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    /* background: pink; */
+    grid-template-columns: 7rem auto 17rem;
+  }
+
+  aside .logo h2 {
+    display: none;
+  }
+
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a :last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+  main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  main .recent-o {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+  main .recent-o table {
+    width: 72vw;
+  }
+
+  .right .top .profile {
+    padding: 0;
+  }
 }
